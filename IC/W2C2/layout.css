@@ -1,0 +1,45 @@
+body{
+  padding-bottom:15%;
+}
+p {
+  margin:0;
+  padding:0;
+}
+#header{
+  text-align:center;
+  border-style:solid;
+  border-width:1px;
+}
+#nav{
+  border-left: solid;
+  border-bottom:solid;
+  border-right:solid;
+  border-width:1px;
+}
+#content{
+  display:flex;
+  border-left: solid;
+  border-bottom:solid;
+  border-right:solid;
+  border-width:1px;
+}
+#summary {
+  text-align: center;
+  width: 30%;
+  vertical-align: top;
+  display:inline;
+}
+#htmlex1{
+  width: 70%;
+  border-left:solid;
+  border-width:1px;
+  margin-right:200px;
+  display:inline;
+}
+#ftr{
+  text-align:center;
+  border-left:solid;
+  border-right:solid;
+  border-bottom:solid;
+  border-width:1px;
+}
