@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang ="en">
+<head>
+  <meta charset ="UTF-8">
+  <title>Puppy Palooza Home!</title>
+  <link rel="stylesheet" type="text/css" href="A05layout.css">
+</head>
+<body>
+
+<table>
+  <td id = "header" colspan = "2">
+    <header>
+      <h1>Puppy Palooza!</h1>
+    </header>
+  </td>
+  <tr></tr>
+
+  <td id = "navlinks" colspan = "2">
+    <nav>
+      <ul1>
+        <li1><a href = "http://localhost:63342/ICS415F15/A%23/A05/A05Home.html">Home</a></li1>
+        <li1><a href = "http://localhost:63342/ICS415F15/A%23/A05/A05Forms.html">Profile Polls</a></li1>
+        <li1><a href = "http://localhost:63342/ICS415F15/A%23/A05/A05Extra.html">Extra</a></li1>
+      </ul1>
+    </nav>
+  </td>
+  <tr></tr>
+
+  <td id = "summary">
+    <b>Profile Polls</b>
+    <p>In order to better understand our fellow puppy lovers who visit this site, these series of polls have been set up to see what random interests/traits fellow puppy lovers perhaps share with one another.</p>
+    <p>Feel free to toggle around with the various polls ^0^</p>
+  </td>
+  <td id = "main_content">
+    <h2>Puppy Palooza Profile Polls</h2>
+    <form action = "A05Forms.html" method = "GET" novalidate>
+      <i>Note: Input types, not supported by old web browsers, will behave as input type text. Sorry for the inconveniece.
+        (Reference: http://www.w3schools.com/html/html_form_input_types.asp)</i>
+      <br><br>
+      When is your birthday?
+      <input name = "birthday" type = "date">
+      <br><br>
+      What is your favorite color?
+      <input name = "fav_color" type = "color">
+      <br><br>
+      What is your favorite month of the year?
+      <input name = "fav_month" type = "month">
+      <br><br>
+      When was the first time you started to like puppies?
+      <input name = "puppy_crush_date" type = "datetime">
+      <br><br>
+      How much do you love puppies (1 - worst, 10 - best)?
+      <input name = "plove_meter" type = "range" min = "1" max = "10" value = "1">
+      <br><br>
+      How many dogs have you ever owned (*max to input is 100)?
+      <input name = "num_dogs" type = "number" min = "0" max = "100">
+      <br><br>
+      What is your email address?
+      <input name = "email" type = "email">
+      <br><br>
+      Here's a simple search bar to find the cutest puppies ever!
+      <input name = "puppy_search" type = "search">
+      <br><br>
+      What is your favorite website to look at puppies?
+      <input name = "fav_puppy_website" type = "url">
+      <br><br>
+      Submit button to send form data.
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </td>
+  <tr></tr>
+
+  <td id = "ftr"  colspan = "2">
+    Copyright (C) Le Internet (Images) & Me (Formating the HTML Page)
+  </td>
+
+</table>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+body{
+  background-image:url("http://www.freecreatives.com/wp-content/uploads/2015/03/Vintage-Wallpaper-104.jpg");
+}
+table{
+  border-collapse:collapse;
+  border:1px solid blueviolet;
+  width:100%;
+}
+#header{
+  height:25vh;
+  border-collapse:collapse;
+  border:1px solid blueviolet;
+  color: maroon;
+}
+#navlinks{
+  height:50px;
+  border-collapse:collapse;
+  border:1px solid blueviolet;
+  color: blue;
+}
+#summary{
+  vertical-align:top;
+  text-align:center;
+  width:25vw;
+  border-collapse:collapse;
+  border:1px solid blueviolet;
+  color: maroon;
+}
+#main_content{
+  width:75vw;
+  border-collapse:collapse;
+  border:1px solid blueviolet;
+  padding-left: 5px;
+}
+.puppyimg{
+  width:300px;
+  height:300px;
+}
+#ftr{
+  height:50px;
+  text-align:center;
+  border-collapse:collapse;
+  border:1px solid blueviolet;
+  color: maroon;
+}
