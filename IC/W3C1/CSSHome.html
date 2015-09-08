@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Cam's Cool Website</title>
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    li {
+      float: left;
+      vertical-align: middle;
+      text-align:center;
+    }
+
+    a:link, a:visited {
+      display: block;
+      width: 120px;
+      font-weight: bold;
+      color: black;
+      background-color: lightgrey;
+      text-align:center;
+      vertical-align: middle;
+      padding: 4px;
+      text-decoration: none;
+      height:42px;
+    }
+
+    a:hover, a:active {
+      background-color: darkgray;
+    }
+    #header{
+      height: 25vh;
+      text-align:left;
+      vertical-align:middle;
+    }
+    #navbar{
+      background-color: lightgrey;
+      height:50px;
+      vertical-align: middle;
+      text-align:center;
+    }
+    #summary{
+      text-align: center;
+      vertical-align: top;
+      float:left;
+    }
+    #htmlex{
+      float:left;
+    }
+    #ftr{
+      clear:both;
+      text-align:center;
+    }
+  </style>
+</head>
+
+<body>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+
+<div class = "containter">
+  <div class = "row">
+    <section name = "Website Name">
+      <div id = "header">
+        <header>
+          <h1>Cam's Cool Website</h1>
+        </header>
+      </div>
+    </section>
+  </div>
+
+  <div class = "row" id = "navbar">
+    <section name = "Nav Links">
+      <nav>
+        <ul>
+          <li><a href = "http://localhost:63342/ICS415F15/IC/W2C2/CSSHome.html">Home</a></li>
+          <li><a href = "http://localhost:63342/ICS415F15/IC/W3C1/CSSForms.html">Forms</a></li>
+        </ul>
+      </nav>
+    </section>
+  </div>
+
+  <div class = "row" id = "content">
+    <section name = "Home Summary">
+      <div class = "col-sm-3 col-md-3" id = "summary">
+        <header>
+          <br>
+          <b>Summary Window</b>
+          <br><br>
+          HTML supports tables.
+          <br><br>
+          HTML supports three different types of lists:
+          <br>
+          unordered, ordered, and description.
+        </header>
+      </div>
+    </section>
+
+    <section name = "HTML Examples 1">
+      <div class = "col-sm-6 col-md-6" id = "htmlex">
+        <header>
+          <h2>Home Page</h2>
+        </header>
+        Tables:
+        <br><br>
+        <p style = "text-indent: 10px">Borderless</p>
+        <p style = "text-indent: 20px">Table</p>
+        <p style = "text-indent: 10px"><b>Header 1</b></p>
+        Row 1, Col 1
+        <br><br>
+        <p style = "text-indent: 40px">Bordered Table</p>
+        <table border = "1" width = "180px" style = "font-size:15px">
+          <th>Header 1</th>
+          <th>Header 2</th>
+          <tr></tr>
+
+          <td>Row 1, Col 1</td>
+          <td>Row 1, Col 2</td>
+          <tr></tr>
+
+          <td>Row 2, Col 1</td>
+          <td>Row 2, Col 2</td>
+        </table>
+        <br>
+        Lists:
+        <ul>
+          <li>Coffee</li>
+          <li>Milk</li>
+        </ul>
+        <ol>
+          <li>Coffee</li>
+          <li>Milk</li>
+        </ol>
+        Coffee
+        <br>
+        <p style = "text-indent: 40px">black hot drink</p>
+        Milk
+        <p style = "text-indent: 40px">white cold drink</p>
+        <br>
+        <aside>
+          This web page has a two column layout with header, navigation bar, and footer.  There is a fairly large header, narrow navigation bar.
+          <br><br>
+          The main section of the website takes up 75% of the page. The left sidebar is center aligned.
+          <br><br>
+        </aside>
+      </div>
+    </section>
+  </div>
+
+  <div class = "row" id = "ftr">
+    <section name = "Copyright footer">
+      <footer>
+        <p>Copyright (C) Cam Moore</p>
+      </footer>
+    </section>
+  </div>
+</div>
+</body>
+</html>
