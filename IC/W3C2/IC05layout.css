@@ -1,0 +1,13 @@
+#transportation{
+  border-style:solid;
+  border-width:1px;
+  padding:10px;
+}
+#vertical_form{
+  border-bottom:solid;
+  border-width:1px;
+  padding:10px;
+}
+#horizontal_form{
+  padding:10px;
+}
