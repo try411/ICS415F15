@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>W4C1:Bootstrap+JavaScript</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/united/bootstrap.min.css">
+  <link rel="stylesheet" href="BootScratchlayout.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script>
+    function blueChangeHeader(x){
+      x.innerHTML = "Javascript Blue Change!";
+      x.style.color = "blue";
+      x.fontStyle = "italic";
+    };
+    function redChangeHeader(x){
+      x.innerHTML = "Javascript Red Change!";
+      x.style.color = "red";
+      x.fontStyle = "italic";
+    };
+    function greenChangeHeader(x){
+      x.innerHTML = "Javascript Green Change!";
+      x.style.color = "green";
+      x.fontStyle = "italic";
+    }
+    function blueChange(x){
+      x.innerHTML = "Bye";
+      x.style.color = "blue";
+      x.fontStyle = "italic";
+    };
+    function redChange(x){
+      x.innerHTML = "Bye";
+      x.style.color = "red";
+      x.fontStyle = "italic";
+    };
+    function greenChange(x){
+      x.innerHTML = "Bye";
+      x.style.color = "green";
+      x.fontStyle = "italic";
+    }
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div id="webpage_title" onclick="blueChangeHeader(this)" onmouseover="redChangeHeader(this)" onmouseout="greenChangeHeader(this)">
+      <header>
+        <h1>JavaScript Practice 1!</h1>
+      </header>
+    </div>
+
+    <nav class="navbar navbar-default">
+      <div id="navigation_bar" onclick="blueChange(this)" onmouseover="redChange(this)" onmouseout="greenChange(this)">
+        <ul class="nav navbar-nav">
+          <li class="#"><a href="#">Home</a></li>
+          <li><a href="#">Home2</a></li>
+          <li><a href="#">Home3</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-sm-3 col-md-3" id="summary" onclick="blueChange(this)" onmouseover="redChange(this)" onmouseout="greenChange(this)">
+        <b>Home Page Welcome</b>
+        <p>This is a test page.</p>
+        <p>This is a test page.</p>
+        <p>This is a test for ICS 415-002 W4C1</p>
+      </div>
+      <div class="col-sm-9 col-md-9" id="content" onclick="blueChange(this)" onmouseover="redChange(this)" onmouseout="greenChange(this)">
+        <b>Text To the Limit!</b>
+        <p>This is a test page Yay!.</p>
+        <p>This is a test page Yay!.</p>
+        <p>This is a test for ICS 415-002 W4C1 Hip Hip Hooray!</p>
+      </div>
+    </div>
+    <div id = "ftr" onclick="blueChange(this)" onmouseover="redChange(this)" onmouseout="greenChange(this)">
+      <p>Copyright (C) Me</p>
+    </div>
+  </div>
+</body>
+</html>
