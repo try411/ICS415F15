@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>W4C2: Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/united/bootstrap.min.css">
+  <link rel="stylesheet" href="BootScratchlayout.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+  <div id="webpage_title">
+    <header>
+      <h1>W4C2: Form Page</h1>
+    </header>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-3 col-md-3" id="summary">
+      <b>Forms</b>
+      <p> A form that asks for the user’s name, address, and phone number. The form’s action should be process.html and method should be GET</p>
+    </div>
+
+    <div class="col-sm-9 col-md-9" id="content">
+      <h2>W4C2: Form (Please fill out)</h2>
+      <form name="myForm" action="process.html" method="get">
+        <div class="form-group">
+          <label for="username">User name: </label>
+          <input type="text" name="name" id="username">
+        </div>
+        <div class="form-group">
+          <label for="address">Address: </label>
+          <input type="text" name="address" id="address">
+        </div>
+        <div class="form-group">
+          <label for="phone">Phone Number: </label>
+          <input type="text" name="phone" id="phone">
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>

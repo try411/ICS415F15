@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>W4C2: Process</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/united/bootstrap.min.css">
+  <link rel="stylesheet" href="../W4C1/BootScratchlayout.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script>
+
+    function tableCreate() {
+
+      var tr = document.createElement('tr');
+      var td = document.createElement('td');
+      var formResults = location.search.split('&');
+      var firstElementParse = formResults[0].slice(1);
+      formResults[0] = firstElementParse;
+
+      var tbl = document.createElement("TABLE");
+      tbl.setAttribute("id", "myTable");
+      tbl.setAttribute("width", "100px");
+      tbl.setAttribute("border", "1");
+      document.body.appendChild(tbl);
+      alert(formResults.length);
+      for (var i = 0; i < formResults.length; i++){
+
+        var formField = formResults[i].search.split['='];
+        var prop = formField[0];
+        var value = formField[1];
+
+        var z = document.createElement("TD");
+        z.setAttribute("name", "tblval");
+        var t = document.createTextNode(prop);
+        document.getElementById("myTable").appendChild(t);
+
+        var a = document.createElement("TD");
+        a.setAttribute("name", "tblval");
+        var b = document.createTextNode(value);
+        document.getElementById("myTable").appendChild(b);
+
+        var y = document.createElement("TR");
+        document.getElementById("myTable").appendChild(y);
+      }
+    }
+  </script>
+</head>
+<body>
+  <button type= "button" onclick="tableCreate()">Click Me to Create Form Results Table!</button>
+</body>
+</html>
