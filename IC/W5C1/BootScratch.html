@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>W5C1:Bootstrap+jQuery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/cosmo/bootstrap.min.css">
+  <link rel="stylesheet" href="BootScratchlayout.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function() {
+      $("h1").click(function () {
+        $(h1).text("jQuery Blue Change!");
+        $("h1").css("color", "blue");
+        $("h1").css("fontStyle", "italic");
+      });
+      $("h1").mouseenter(function (x) {
+        $("h1").text("jQuery Red Change!");
+        $("h1").css("color", "red");
+        $("h1").css("fontStyle", "italic");
+      });
+      $("h1").mouseleave(function (x) {
+        $("h1").text("jQuery Green Change!");
+        $("h1").css("color", "green");
+        $("h1").css("fontStyle", "italic");
+      });
+
+      $('div').click(function (x) {
+        $('div').text("Bye");
+        $('div').css("color", "blue");
+        $('div').css("fontStyle", "italic");
+      });
+      $('div').mouseenter(function (x) {
+        $('div').text("Bye");
+        $('div').css("color", "red");
+        $('div').css("fontStyle", "italic");
+      });
+      $('div').mouseleave(function (x) {
+          $('div').text("Bye");
+          $('div').css("color", "green");
+          $('div').css("fontStyle", "italic");
+      });
+    });
+
+    function reset(){
+      location.reload(true);
+    }
+    function demoFadeToggle(){
+      $('div').fadeToggle();
+      $('div').fadeToggle("slow");
+      $('div').fadeToggle(3000);
+    }
+    function demoFadeIn(){
+      $('div').fadeIn();
+      $('div').fadeIn("slow");
+      $('div').fadeIn(3000);
+    }
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div id="webpage_title">
+      <header>
+        <h1>jQuery Practice 1.0!</h1>
+      </header>
+    </div>
+
+    <nav class="navbar navbar-default">
+      <div id="navigation_bar">
+        <ul class="nav navbar-nav">
+          <li class="bullet"><a href="#">Home</a></li>
+          <li class="bullet"><a href="#">Home2</a></li>
+          <li class="bullet"><a href="#">Home3</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-sm-3 col-md-3" id="summary">
+        <b>Home Page Welcome</b>
+        <p>This is a test page.</p>
+        <p>This is a test page.</p>
+        <p>This is a test for ICS 415-002 W4C1</p>
+      </div>
+      <div class="col-sm-9 col-md-9" id="content">
+        <b>Text To the Limit!</b>
+        <p>This is a test page Yay!.</p>
+        <p>This is a test page Yay!.</p>
+        <p>This is a test for ICS 415-002 W5C1 Hip Hip Hooray!</p>
+      </div>
+    </div>
+    <div id = "ftr">
+      <p>Copyright (C) Me</p>
+    </div>
+  </div>
+  <button id="reset" onclick="reset()">Reset</button>
+  <button id="fadeToggle" onclick="demoFadeToggle()">Fade Toggle</button>
+  <button id="fadeIn" onclick="demoFadeIn()">Fade In</button>
+</body>
+</html>
