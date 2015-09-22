@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>A07: Pt.3 Form</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/united/bootstrap.min.css">
+  <link rel="stylesheet" href="BootScratchlayout.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script>
+    function validateForm(){
+      var ok = true;
+      var errors = "";
+      document.getElementById("username").style.backgroundColor = "white";
+      document.getElementById("email").style.backgroundColor = "white";
+      document.getElementById("password").style.backgroundColor = "white";
+      document.getElementById("confirm").style.backgroundColor = "white";
+
+      var a = document.forms["myForm"]["name"].value;
+      if (a == null || a == "") {
+        document.getElementById("username").style.backgroundColor = "red";
+        errors = errors.concat("<p>Error: \"Name\" field left blank.</p>");
+        ok = false;
+      }
+
+      var b = document.forms["myForm"]["email"].value;
+      if (b == null || b == "") {
+        document.getElementById("email").style.backgroundColor = "red";
+        errors = errors.concat("<p>Error: \"Email\" field left blank.<\p>");
+        ok = false;
+      }
+
+      var c = document.forms["myForm"]["password"].value;
+      if (c == null || c == "") {
+        document.getElementById("password").style.backgroundColor = "red";
+        errors = errors.concat("<p>Error: \"Password\" field left blank.<\p>");
+        ok = false;
+      }
+
+      var d = document.forms["myForm"]["confirm"].value;
+      if (d == null || d == "") {
+        document.getElementById("confirm").style.backgroundColor = "red";
+        errors = errors.concat("<p>Error: \"Confirm Password\" field left blank.<\p>");
+        ok = false;
+      }
+
+      if(c != d){
+        document.getElementById("confirm").style.backgroundColor = "red";
+        errors = errors.concat("<p>Error: \"Password & Confirmed Password\" fields don't match.<\p>");
+        ok = false;
+      }
+
+      if(ok == false){
+        document.getElementById("error").innerHTML = errors;
+      }
+
+      return ok;
+    }
+  </script>
+</head>
+<body>
+<div class="container-fluid">
+  <div id="webpage_title">
+    <header>
+      <h1>A07: Demo_Form</h1>
+    </header>
+  </div>
+
+  <div class="row">
+    <div class="col-sm-3 col-md-3" id="summary">
+      <b>Forms</b>
+      <p> A form that asks for the user’s username, email, and password. </p>
+    </div>
+
+    <div class="col-sm-9 col-md-9" id="content">
+      <h2>A07: Form (Please fill out)</h2>
+      <p name="error" id="error" style="color:red"></p>
+      <b name="success" id="success"></b>
+      <form name="myForm" action="demo_form.html" onsubmit="return validateForm()" method="get">
+        <div class="form-group">
+          <label for="username">User name: </label>
+          <input type="text" name="name" id="username">
+        </div>
+        <div class="form-group">
+          <label for="email">Email: </label>
+          <input type="email" name="email" id="email">
+        </div>
+        <div class="form-group">
+          <label for="password">Password: </label>
+          <input type="password" name="password" id="password">
+        </div>
+        <div class="form-group">
+          <label for="confirm">Confirm Password: </label>
+          <input type="password" name="confirm" id="confirm">
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+</div>
+</body>
+</html>
