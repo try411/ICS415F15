@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>W5C2</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/united/bootstrap.min.css">
+  <link rel="stylesheet" href="W5C2layout.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $("#switchSummary").click(function(){
+        $("#summary").load("summarySwitch.txt");
+      });
+
+      $("#getEx").click(function(){
+        $.get("#summary", function(data, status){
+          alert("Data: " + data + "\nStatus: " + status);
+        });
+      });
+      $("#hide").click(function(){
+        $("div").hide();
+      });
+      $("#show").click(function(){
+        $("div").show();
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div id="webpage_title">
+      <header>
+        <h1>Puppy Palooza!</h1>
+      </header>
+    </div>
+
+    <nav class="navbar navbar-default">
+      <div id="navigation_bar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="W5C2Bootscratch.html">Home</a></li>
+          <li><a href="A06Forms.html">Forms</a></li>
+          <li><a href="A06Extra.html">Extras</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-sm-3 col-md-3" id="summary">
+        <b>Home Page Welcome</b>
+        <p>Greetings and welcome to the puppy page friend!</p>
+        <p>Take a quick load off and enjoy some of these adorable puppy pictures to the -></p>
+        <p>Don't be afraid to give a sigh of "Awwww" and feel the stress peel away for a fleeing moment.</p>
+      </div>
+      <div class="col-sm-9 col-md-9" id="content">
+        <img class = "puppyimg" src = "http://cdn.sheknows.com/articles/2013/04/Puppy_2.jpg">
+        <img class = "puppyimg" src = "http://cdn2.hellogiggles.com/wp-content/uploads/2013/12/09/a-cutest-puppies-11.jpg">
+        <img class = "puppyimg" src = "https://coffeecupsintrees.files.wordpress.com/2013/05/tumblr_lo4dgskxwu1qc7r8vo1_500.jpg">
+      </div>
+    </div>
+    <div id = "ftr">
+      <p>Copyright (C) Le Internet (Images) & Me (Formating the HTML Page)</p>
+    </div>
+  </div>
+  <button id="switchSummary">Switch Summary</button>
+  <button id="getEx">Get HTML Content</button>
+  <button id="hide">Hide</button>
+  <button id="show">Show</button>
+</body>
+</html>

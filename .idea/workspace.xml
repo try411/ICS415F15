@@ -23,21 +23,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="BootScratch.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/IC/W5C1/BootScratch.html">
+      <file leaf-file-name="W5C2Bootscratch.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/IC/W5C2/W5C2Bootscratch.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.7730496">
-              <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+            <state vertical-scroll-proportion="0.66843975">
+              <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BootScratchlayout.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/IC/W5C1/BootScratchlayout.css">
+      <file leaf-file-name="W5C2layout.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/IC/W5C2/W5C2layout.css">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -65,7 +65,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/IC/W2C1/HTML5 Playground.html" />
         <option value="$PROJECT_DIR$/IC/W2C1/HTML5 IC.html" />
         <option value="$PROJECT_DIR$/IC/W2C1/HTML5 Forms.html" />
         <option value="$PROJECT_DIR$/IC/W2C1/HTML5 Home.html" />
@@ -116,6 +115,7 @@
         <option value="$PROJECT_DIR$/A#/A07/demo_form.html" />
         <option value="$PROJECT_DIR$/IC/W5C1/BootScratchlayout.css" />
         <option value="$PROJECT_DIR$/IC/W5C1/BootScratch.html" />
+        <option value="$PROJECT_DIR$/IC/W5C2/W5C2Bootscratch.html" />
       </list>
     </option>
   </component>
@@ -180,6 +180,7 @@
     <panes>
       <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -212,7 +213,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="W5C1" />
+              <option name="myItemId" value="W5C2" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -243,10 +244,6 @@
               <option name="myItemId" value="A#" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="A07" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -261,10 +258,13 @@
               <option name="myItemId" value="A#" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="A06" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -278,11 +278,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\ICS415F15\IC\W5C2" />
       <recent name="C:\xampp\htdocs\ICS415F15\IC\W5C1" />
       <recent name="C:\xampp\htdocs\ICS415F15\A#\A07" />
       <recent name="C:\xampp\htdocs\ICS415F15\IC\W4C2" />
       <recent name="C:\xampp\htdocs\ICS415F15\IC\W4C1" />
-      <recent name="C:\xampp\htdocs\ICS415F15\test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\ICS415F15\IC\W4C2" />
@@ -570,15 +570,16 @@
       <workItem from="1442909352067" duration="650000" />
       <workItem from="1442910130301" duration="11543000" />
       <workItem from="1442948602520" duration="4257000" />
-      <workItem from="1442954424653" duration="1258000" />
+      <workItem from="1442954424653" duration="1364000" />
+      <workItem from="1443126794046" duration="1851000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92941000" />
+    <option name="totallyTimeSpent" value="94898000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1364" height="726" extended-state="1" />
+    <frame x="1" y="1" width="1364" height="726" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -626,20 +627,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/IC/W2C1/HTML5Home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="105" column="12" selection-start-line="101" selection-start-column="2" selection-end-line="105" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IC/W2C2/layout.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/IC/W2C2/CSSHome.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -969,18 +956,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/IC/W5C1/BootScratch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4574468">
+          <caret line="90" column="66" selection-start-line="90" selection-start-column="66" selection-end-line="90" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/IC/W5C1/BootScratchlayout.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.76949155">
           <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/IC/W5C1/BootScratch.html">
+    <entry file="file://$PROJECT_DIR$/IC/W5C2/W5C2layout.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.7730496">
-          <caret line="16" column="43" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/IC/W5C2/W5C2Bootscratch.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66843975">
+          <caret line="67" column="37" selection-start-line="67" selection-start-column="37" selection-end-line="67" selection-end-column="37" />
           <folding />
         </state>
       </provider>
