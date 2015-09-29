@@ -33,13 +33,14 @@ $(document).ready(function(){
     $('#hs5').text() == "closed(+)" ? $('#hs5').text('opened(-)') : $('#hs5').text('closed(+)');
   });
 
-  $('#myForm').submit(function(){
+  $('#submitbtn').click(function(){
     var urltxt= $('#site').val();
-    var numlinks = 0;
-    $.get(urltxt,function(data){
-      numlinks = data.getElementsByTagName('href').length;
+
+    $.get(urltxt, function(data){
+      var count = $('<a></a>').html(data).find('a').length;
+      $('#result').text("Number of Links: " + count);
     });
-    $('#result').text('Number of Links: ' + numlinks);
+
   });
 
 
