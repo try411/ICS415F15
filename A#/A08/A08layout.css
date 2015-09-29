@@ -1,0 +1,33 @@
+body{
+  background-image:url("http://www.designbolts.com/wp-content/uploads/2014/03/Yellow-blur-background1.jpg");
+}
+ul li{
+  width:100%;
+}
+#webpage_title{
+  height:25vh;
+  padding-top:5vh;
+}
+#navigation_bar{
+  height:50px;
+}
+#summary{
+  text-align:center;
+  padding:10px;
+  border-right:solid;
+  border-width:1px;
+  border-color:orangered;
+}
+#content{
+  padding:10px;
+}
+#ftr{
+  height:50px;
+  vertical-align:middle;
+  text-align:center;
+  padding-top:15px;
+  border-top:solid;
+  border-bottom:solid;
+  border-width:1px;
+  border-color:orangered;
+}

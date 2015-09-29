@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>A08: Playing with jQuery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/united/bootstrap.min.css">
+  <link rel="stylesheet" href="A08layout.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="myScript.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+  <div id="webpage_title">
+    <header>
+      <h1>A08: Form</h1>
+    </header>
+  </div>
+
+  <nav class="navbar navbar-default">
+    <div id="navigation_bar">
+      <ul class="nav navbar-nav">
+        <li><a href="A08FAQ.html">FAQ</a></li>
+        <li  class="active"><a href="A08Form.html">Forms</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="row">
+    <div class="col-sm-3 col-md-3" id="summary">
+      <b style="text-decoration:underline">Count Site Links</b>
+      <p>An input form with a URL input field and a submit button. When the button is pressed it calls a jQuery function from myScript.js that gets the URL and counts the number of links in the page. Shows the result below the the input form.</p>
+    </div>
+    <div class="col-sm-9 col-md-9" id="content">
+      <h2 style="text-decoration: underline">Site Links Counting Form</h2>
+      <form id="myForm" name="myForm" action="A08Form.html" method="get">
+        <div class="form-group">
+          <label for="site">Site to Count Links: </label>
+          <input type="url" name="site" id="site">
+        </div>
+        <input type="submit" value="Submit" id="submitbtn">
+      </form>
+      <p id="result"></p>
+    </div>
+  </div>
+  <div id = "ftr">
+    <p>Copyright (C) Kaelyn H.</p>
+  </div>
+</div>
+</body>
+</html>

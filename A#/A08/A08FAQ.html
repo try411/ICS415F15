@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>A08: Playing with jQuery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.5/united/bootstrap.min.css">
+  <link rel="stylesheet" href="A08layout.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="myScript.js"></script>
+</head>
+<body>
+  <div class="container-fluid">
+    <div id="webpage_title">
+      <header>
+        <h1>A08: FAQ</h1>
+      </header>
+    </div>
+
+    <nav class="navbar navbar-default">
+      <div id="navigation_bar">
+        <ul class="nav navbar-nav">
+          <li class="active"><a href="A08FAQ.html">FAQ</a></li>
+          <li><a href="A08Form.html">Forms</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div class="col-sm-3 col-md-3" id="summary">
+        <b style="text-decoration:underline">FAQ</b>
+        <p>An example FAQ page that lists five different Frequently Asked Questions in a list. Each question should be clickable. When the user clicks on the question the answer should appear below the question. If they click on the question again the answer should hide. Use jQuery functions to implement this functionality. The user should be able to have multiple questions ‘opened’ at the same time. Change the questions to indicate that they are opened (-) or closed (+).</p>
+      </div>
+      <div class="col-sm-9 col-md-9" id="content">
+        <h2 style="text-decoration: underline">eCafe Student FAQ Example</h2>
+        <p>* Click on questions to open and close answers.</p>
+        <ul>
+          <li id="q1" class="question">Q. Can my answers be traced back to me? <p id="hs1" class="hideshowtxt">closed(+)</p></li>
+          <li id="a1" class="answer" type="square">A. No. At no time do we associate you with your answers. All answers are completely anonymous. </li>
+          <li id="q2" class="question">Q. I submitted my survey before I was done, or I made a mistake. Can I redo it? <p id="hs2" class="hideshowtxt">closed(+)</p></li>
+          <li id="a2" class="answer" type="square">A. No. Since we don't associate you with your responses, we have no way to know which evaluation is yours in order to reset it. </li>
+          <li id="q3" class="question">Q. Where can I see published results? <p id="hs3" class="hideshowtxt">closed(+)</p></li>
+          <li id="a3" class="answer" type="square">A. Instructors can voluntarily publish their results for all to see. Go to http://www.hawaii.edu/ecafe and click on the "View Published Surveys" button to see the results. </li>
+          <li id="q4" class="question">Q. When do instructors get to see the results? <p id="hs4" class="hideshowtxt">closed(+)</p></li>
+          <li id="a4" class="answer" type="square">A. The Thursday after grades are due. eCAFE does not release results if grades are not set.</li>
+          <li id="q5" class="question">Q. I made a mistake when I submitted my survey, can I redo it? <p id="hs5" class="hideshowtxt">closed(+)</p></li>
+          <li id="a5" class="answer" type="square">A. Once a survey is submitted, it is stored completely independently of your identifying information. We do this so the surveys will be completely anonymous, but it has the unfortunate side affect that we can't determine which survey is yours in order to fix a mistake. You may want to email your instructor about it so they have a record proving that those results were erroneous. </li>
+        </ul>
+      </div>
+    </div>
+    <div id = "ftr">
+      <p>Copyright (C) Kaelyn H.</p>
+    </div>
+  </div>
+</body>
+</html>
