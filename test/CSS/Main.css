@@ -1,0 +1,271 @@
+/* This is the main stylesheet for the website.
+** It must be included in every page. */
+
+HTML {
+  height: 100%; width: 100%;
+  overflow-y:scroll;
+  overflow-x:auto;
+
+}
+
+Body {
+  position: relative; padding: 30px 0 0 0; font-family: 'Times New Roman';
+}
+
+img {
+  border: 0px solid white;
+}
+
+a {
+  color: #ed2024; text-decoration: none; border-bottom: 1px dotted #ed2024;
+}
+
+a:hover {
+  color: #336397; border-bottom: 1px dotted #336397;
+}
+
+/* This class defines the width of the page. */
+/* The width is 960 pixels */
+.Wrap {
+  width: 960px; margin: 0 auto; position: relative;
+}
+
+/* Style for the box frames for the website */
+.LinkBox {
+  width: 198px;
+  margin: 10px auto 20px auto;
+  background: #FFFFFF; border: 1px solid #bbcde0;
+  box-shadow: 0 0 4px #DDDDDD;
+  -webkit-box-shadow: 0 0 4px #DDDDDD;
+  text-align: center;
+  padding: 10px 0;
+  display: block;
+}
+
+.LinkBox:hover {
+  border: 1px solid #77a3d2;
+  box-shadow: 0 0 4px #77a3d2;
+  -webkit-box-shadow: 0 0 4px #77a3d2;
+}
+
+/* The style for the left section */
+#LeftSection {
+  width: 206px; position: fixed; height: 100%; overflow: hidden;
+}
+
+#LeftSection a {
+  text-decoration: none; color: #656565;
+}
+
+#Menu  > ul{
+  margin: 0; padding: 0;
+}
+
+#Menu .selected {
+  background: #373737; color: #FFFFFF;
+}
+
+#Menu .selected:hover {
+  cursor: pointer; background: #373737;
+}
+
+#Menu a {
+  display: block; text-decoration: none;
+  color: #787878; font-size: 16px; padding: 8px 0;
+  border-bottom: 1px solid #bbcde0;
+}
+
+#Menu ul > li:last-child> a {
+  border-bottom: 0px solid #FFFFFF; color: #0c00ff;
+}
+
+#Menu ul > li:last-child> .selected {
+  border-bottom: 0px solid #FFFFFF; color: #FFFFFF;
+}
+
+#Menu a:hover{
+  color: #FFFFFF !IMPORTANT; background: #386ea7;
+}
+
+/* Right Section Style */
+.RightSection {
+  margin: 0 0 0 256px;
+}
+
+.RightSection.LinkBox {
+  text-align: left; position: relative;
+  width: auto; margin-top: 10px;
+  padding: 48px 10px 10px 10px;
+}
+
+.RightSection h1 {
+  padding: 0; margin: 15px 0 5px 0; border-bottom: 2px solid #386EA7; font-size: 22px; color: #373737;
+}
+
+.RightSection h2 {
+  padding: 0; margin: 10px 0 5px 0; border-bottom: 1px solid #373737; font-size: 20px; color: #373737;
+}
+
+.RightSection h3 {
+  padding: 0; margin: 2px 0px; font-size: 14px; color: #386EA7;
+}
+
+.RightSection p {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  padding: 0px 10px; margin: 0; font-size: 12px; color: #707070; line-height: 22px;
+}
+
+.RightSection .text {
+  font-family: 'Trebuchet MS', Helvetica, sans-serif;
+  padding: 0px 10px; margin: 0; font-size: 12px; color: #707070; line-height: 22px;
+}
+
+/* Style for the main ribbon */
+#TopRibbon {
+  top: 10px; left: -26px; position: absolute; z-index: 1;
+}
+
+#TopRibbon > div {
+  background: #386ea7 url('../Images/RibbonArrow.png') no-repeat center right; color: #FFFFFF; font-size: 22px; padding: 2px 35px 2px 36px;
+}
+
+#ExtraRibbon {
+  top: 10px; right: -26px; position: absolute; z-index: 1; text-align: right;
+}
+
+#ExtraRibbon > div {
+  background: #ffcc00 url('../Images/RibbonArrowYellow.png') no-repeat center left; color: #585031; font-size: 14px; padding: 4px 35px 4px 36px;
+}
+
+#ExtraRibbon > div a {
+  color: #585031; border-bottom: 0px solid #FFFFFF; margin: 0 7px; text-decoration: underline;
+}
+
+#ExtraRibbon > div a:hover {
+  color: #FFFFFF;
+}
+
+/* Style for the footer */
+#Footer {
+  margin: 25px 0 0 257px; padding: 0 0 20px 0; text-align: center;
+}
+
+#Footer > div {
+  display: inline-block; font-size: 14px; color: #484848; line-height: 14px;
+}
+
+#Footer a {
+  border-bottom: 0px solid #FFFFFF; color: #336397; position: relative;
+}
+
+/* Style for front page articles */
+.Post {
+  border-bottom: 1px solid #d6d6d6; font-family: 'Trebuchet MS', Helvetica, sans-serif; padding: 4px 10px; margin: 0 0 15px 0;
+}
+
+.Post > a {
+  color: #386ea7; font-size: 18px; border: 0px solid #FFFFFF; text-transform: capitalize; z-index: 2; position: relative;
+}
+
+.Post > a:hover {
+  color: #ed2024;
+}
+
+.Post > .poster, .poster {
+  text-align: center;
+}
+
+.Post > .poster img, .poster img {
+  width: 90%;
+}
+
+.Post > span {
+  color: #1c4a7b; font-size: 12px; float: right;
+}
+
+.Post > p {
+  padding: 5px 10px; margin: 0; font-size: 11px; color: #707070; line-height: 24px; text-indent: 15px;
+}
+
+#RecentPost > .Post:last-child {
+  border-bottom: 0px solid #FFFFFF !IMPORTANT; color: red !IMPORTANT;
+}
+
+.PostControl {
+  position: relative; overflow: auto; text-align: center; height: 100%; margin: 25px 0 5px 0; font-size: 18px;
+}
+
+.PostControl > a:first-child {
+  float: left; width: 49.5%; background: #D6D6D6; color: #373737; border-bottom: 0px solid #FFFFFF;
+}
+
+.PostControl > a:last-child {
+  float: right; width: 49.5%; background: #D6D6D6; color: #373737; border-bottom: 0px solid #FFFFFF;
+}
+
+.PostControl > a:hover {
+  color: #FFFFFF; background: #373737
+}
+
+/* Prompt classes */
+.YellowPrompt {
+  border: 1px solid #ebeb61;
+  background: #ffff99;
+  padding:  3px 7px;
+  margin: 0 5px;
+  display: block;
+}
+
+.GreenPrompt {
+  border: 1px solid #c8e9a0;
+  background: #e8ffcc;
+  padding:  3px 7px;
+  margin: 0 5px;
+  display: block;
+}
+
+.RedPrompt {
+  border: 1px solid #ffcccc;
+  background: #ffecec;
+  padding:  3px 7px;
+  margin: 0 5px;
+  display: block;
+}
+
+/* Login Area */
+#LoginBar{
+  z-index: 4; padding: 10px; overflow: auto; font-size: 14px; color: #787878; background: #FFFFFF;
+}
+
+#BlackFade {
+  background: transparent URL('../Images/70fade.png'); position: fixed; top: 0; left: 0; right: 0; bottom: 0; height: 100%; width: 100%; z-index: 3; display: none;
+}
+
+#LoginForm {
+  position: relative; overflow: visible; width: 50%; color: #373737; float: left; background: #FFFFFF;
+}
+
+#FormFrame {
+  padding: 10px; border-right: 1px solid #cacaca; position: relative; overflow: auto;
+}
+
+#FormFrame input{
+  width: 90%; border: 1px solid #afafaf; padding: 2px 5px; outline: 0;
+}
+
+.LoginWrong {
+  border: 1px solid #ec8181 !IMPORTANT;
+  background: #fff6f6;
+}
+
+#LoginBar .RightPane {
+  float: left; width: 50%; position: relative;
+}
+
+#LoginBar .RightPane span{
+  margin: 10px 0 5px 10px; display: block; font-size: 18px; border-bottom: 1px solid silver;
+}
+
+#LoginBar .RightPane a{
+  margin: 0 15px;
+}

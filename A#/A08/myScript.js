@@ -35,10 +35,11 @@ $(document).ready(function(){
 
   $('#submitbtn').click(function(){
     var urltxt= $('#site').val();
+    var datacontent;
 
     $.get(urltxt, function(data){
       var count = $('<a></a>').html(data).find('a').length;
-      $('#result').text("Number of Links: " + count);
+      $('#result').text(count);
     });
 
   });
